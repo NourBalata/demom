@@ -26,18 +26,15 @@ max-width: 70%;
   }
 }
 @media only screen and (min-width: 600px){
-  .checkbtn{
-    display:none;
-  }
-  #check
-  {  
-  
-      display:none;
+  .sidebar-menu{
+    max-width: 2%;
   }
   
   .sidebar-nav{
     display:block;
+    max-width: 10%;
 }
+
 .registration-section {
 max-width: 50%;
 }
@@ -50,6 +47,9 @@ max-width: 50%;
   padding-left: 25px;
   
 }
+/* .sidebar-nav{
+  max-width: 20%;
+} */
 .registration-header{
   text-align: right;
   padding-left: 25px;
@@ -59,6 +59,7 @@ max-width: 50%;
   padding-left: 50px;
 
 }
+
 }
 @media only screen and (min-width: 768px) {
   .checkbtn{
@@ -83,14 +84,14 @@ max-width: 50%;
 }
 }
 @media only screen and (min-width: 992px){
-  .checkbtn{
+  /* .checkbtn{
     display:none;
   }
   #check
   {  
   
       display:none;
-  }
+  } */
   .sidebar-nav{
     display:block;
 }
@@ -634,8 +635,15 @@ padding-right: 20px;
   }
   .checkbtn
   {
-    display: block;
-    
+    display: none;
+      .checkbtn{
+    display:none;
+  }
+  #check
+  {  
+  
+      display:none;
+  }
   
   }
  }
