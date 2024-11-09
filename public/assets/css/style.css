@@ -111,13 +111,13 @@ max-width: 50%;
     display:block;
 }
   .registration-section {
-    max-width: 100%;
+    max-width: 50%;
   }
   .sidebar-menu{
-    max-width: 100%;
+    max-width:20%;
   }
 .sidebar-nav{
-  max-width: 100%;
+  max-width: 25%;
 }
 }
 
@@ -595,11 +595,11 @@ font-size: 30px;
 }
 
 a.active,a:hover{
-  background-color: #cfe0f3;
+  background-color: #3f9099;
   transition: .10s;
 }
 nav ul li a{
-color: #54a7b1;
+color: #292c2c;
 font-size: 25px;
 padding: 7px 13px;
 border-radius: 3px;
