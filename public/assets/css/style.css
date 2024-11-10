@@ -1,6 +1,12 @@
 
 @media only screen and (max-width: 600px) {
-  
+  .user-display-name{
+    display: none;
+  }
+  .sidebar-logo,.sidebar-content{
+    text-align: center;
+    padding-left: 35%;
+  }
   .sidebar-nav{
       display:none;
   }
@@ -30,7 +36,13 @@ max-width: 70%;
   .sidebar-menu{
     max-width: 2%;
   }
-  
+  .user-display-name{
+    display: none;
+  }
+  .sidebar-logo,.sidebar-content{
+    text-align: center;
+    padding-left:45%;
+  }
   .sidebar-nav{
     display:block;
     max-width: 10%;
@@ -67,7 +79,25 @@ max-width: 50%;
 }
 
 }
+/* @media only screen and (width: 802px) {
+  .user-display-name{
+    display: none;
+  }
+  .sidebar-logo,.sidebar-content{
+    text-align: center;
+    padding-left: 80%;
+  }
+} */
+
 @media only screen and (min-width: 768px) {
+  .user-display-name{
+    display: none;
+    padding-right: 30%;
+  }
+  .sidebar-logo,.sidebar-content{
+    text-align: center;
+    padding-left: 10%;
+  }
   .checkbtn{
     display:none;
   }
@@ -110,9 +140,18 @@ max-width: 50%;
 .sidebar-nav{
   max-width: 10%;
 }
+.user-display-name{
+  display: block;
+}
 }
 @media only screen and (min-width: 1200px){
- 
+  .user-display-name{
+    display: block;
+  }
+  .sidebar-logo,.sidebar-content{
+    /* text-align: center; */
+    padding-left: 50%;
+  }
   .sidebar-nav{
     display:block;
 }
