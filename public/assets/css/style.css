@@ -41,7 +41,7 @@ max-width: 70%;
   }
   .sidebar-logo,.sidebar-content{
     text-align: center;
-    padding-left:40%;
+    padding-left:30%;
   }
   .sidebar-nav{
     display:block;
@@ -130,7 +130,9 @@ max-width: 50%;
   } */
   .sidebar-nav{
     display:block;
+
 }
+
   .registration-section {
     max-width: 50%;
   }
@@ -150,7 +152,7 @@ max-width: 50%;
   }
   .sidebar-logo,.sidebar-content{
     /* text-align: center; */
-    padding-left: 50%;
+    padding-left:30%;
   }
   .sidebar-nav{
     display:block;
