@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 600px) {
   
   .sidebar-nav{
@@ -34,6 +35,11 @@ max-width: 70%;
     display:block;
     max-width: 10%;
 }
+.sidebar-content {
+  padding: 0px;
+
+}
+
 
 .registration-section {
 max-width: 50%;
@@ -152,7 +158,7 @@ body {
   display: flex;
   flex-direction: column;
   line-height: normal;
-  width: 81%;
+  width: 90%;
 }
 
 .profile-info {
@@ -1038,7 +1044,7 @@ padding-right: 20px;
   flex-grow: 1;
   flex-direction: column;
   width: 100%;
-  padding: 33px 54px 14px;
+  padding:0;
 }
 
 /* @media (max-width: 991px) {
