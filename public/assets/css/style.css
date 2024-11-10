@@ -1,11 +1,18 @@
 
 @media only screen and (max-width: 600px) {
+    .balance-text,.user-icon{
+    display:none;
+  }
   .user-display-name{
     display: none;
   }
   .sidebar-logo,.sidebar-content{
     text-align: center;
     padding-left: 20%;
+  }
+  .sidebar-logo,.sidebar-content{
+    text-align: center;
+    padding-left: 30%;
   }
   .sidebar-nav{
       display:none;
@@ -32,14 +39,14 @@ max-width: 82%;
 
   }
 }
-@media only screen and (width: 400px) {
+@media only screen and (max-width: 400px) {
 
   .user-display-name{
     display: none;
   }
   .sidebar-logo,.sidebar-content{
     text-align: center;
-    padding-left: 50%;
+    padding-left: 60%;
   }
   .sidebar-nav{
       display:none;
@@ -48,7 +55,7 @@ max-width: 82%;
     display:none;
   }
   .registration-section {
-max-width: 80%;
+max-width: 78%;
   }
 
 
@@ -135,7 +142,7 @@ max-width: 60%;
     display:block;
 }
   .registration-section {
-    max-width: 65%;
+    max-width: 60%;
   }
   
   .sidebar-menu{
@@ -195,9 +202,9 @@ max-width: 60%;
 }
 
 
-body {
+ body {
   overflow-x: hidden;/* Hide scrollbars */
-}
+ } 
 
 .profile-container {
   display: flex;
@@ -637,7 +644,7 @@ font-size: 30px;
 }
 
 .menu-items {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   list-style: none;
   text-decoration: none;
   display: flex;
@@ -647,8 +654,8 @@ font-size: 30px;
 }
 
 .menu-item {
-  border-radius: 10px;
-  background-color: #fff;
+  /* border-radius: 10px;
+  background-color: #fff; */
   display: flex;
   /* width: 100%; */
   align-items: center;
@@ -667,7 +674,14 @@ font-size: 30px;
   margin: auto 0;
 }
 
-a.active,a:hover{
+.menu-icon:active,.menu-icon:hover{
+  /* background-color: #3f9099; */
+  transition: .10s;
+ 
+    border-right: 5px solid #3f9099;;
+
+}
+a:active,a:hover{
   /* background-color: #3f9099; */
   transition: .10s;
  
@@ -731,17 +745,23 @@ padding-right: 20px;
     
   
   }
+.sidebar-menu{
+  height: 50%;
+}
   ul{
+    scrollbar-width: 10%;
     position: fixed;
-    width: 100%;
+    width: 50%;
+ 
     height: 100vh;
     background-color: #00000000;
-    top: 60px;
+    top: 80px;
     right:-120%;
-    text-align: center;
+    text-align: right;
     transition: all .5s;
-    
+  
   }
+
   #check:checked ~ ul {
     right: 0;
   }
@@ -1604,14 +1624,16 @@ padding-right: 20px;
 }
 
 .menu-item {
-  border-radius: 10px;
-  background-color: #fff;
+  /* /* border-radius: 10px; */
+  background-color: #fff; 
   display: flex;
   width: 100%;
   align-items: center;
   gap: 8px;
   justify-content: flex-end;
   padding: 9px 16px;
+
+  
 }
 
 .menu-item-text {

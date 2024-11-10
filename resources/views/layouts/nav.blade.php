@@ -1,12 +1,13 @@
 <nav class="sidebar-menu"data-closable>
  <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
-        <i class="fa fa-bars" style="color:rgb(0, 0, 0) ; font-size:20px"></i>
+        <i class="fa fa-bars" style="color:rgb(0, 0, 0) ; font-size:20px;"></i>
     </label> 
     
-<ul class="menu-items" data-closable>
-    <label for="check" class="checkbtn">
-        <i class="fa fa-close" style="color:rgb(0, 0, 0) ; font-size:20px"></i>
+<ul class="menu-items" data-closable >
+    <div>
+    <label for="check" class="checkbtn ">
+        <i class="fa fa-close menu-item" style="color:rgb(0, 0, 0) ;  padding-right:60%;"></i>
     </label> 
         <li class="menu-item" >
             <a href="#" class="menu-text" class="active">لوحة التحكم</a>
@@ -52,5 +53,6 @@
             <a href="#" class="menu-text">تسجيل الخروج</a>
             <img src="{{ asset('image/logout.svg') }}" alt="Logout icon" class="menu-icon" />
         </li>
+    </div>
     </ul>
 </nav>
