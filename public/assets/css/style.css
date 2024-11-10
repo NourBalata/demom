@@ -5,7 +5,7 @@
   }
   .sidebar-logo,.sidebar-content{
     text-align: center;
-    padding-left: 27%;
+    padding-left: 20%;
   }
   .sidebar-nav{
       display:none;
@@ -120,7 +120,7 @@ max-width: 60%;
     padding-left: 15%;
   }
 .sidebar-nav{
-  max-width: 15%;
+  max-width: 20%;
 }
 }
 @media only screen and (min-width: 992px){
@@ -138,13 +138,13 @@ max-width: 60%;
 }
 
   .registration-section {
-    max-width: 50%;
+    max-width: 45%;
   }
   .sidebar-menu{
-    max-width:20%;
+    max-width:30%;
   }
 .sidebar-nav{
-  max-width: 25%;
+  max-width: 20%;
 }
 .user-display-name{
   display: block;
@@ -160,13 +160,13 @@ max-width: 60%;
   }
   .sidebar-nav{
     display:block;
-    max-width: 15%;
+    max-width: 10%;
 }
   .registration-section {
-    max-width: 100%;
+    max-width: 90%;
   }
   .sidebar-menu{
-    max-width:20%;
+    max-width:15%;
   }
 
 }
