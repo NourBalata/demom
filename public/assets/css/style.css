@@ -11,7 +11,7 @@
       display:none;
   }
   .registration-section {
-max-width: 85%;
+max-width: 82%;
   }
   .user-display-name{
     padding-right: 10%;
@@ -32,9 +32,29 @@ max-width: 85%;
 
   }
 }
+@media only screen and (width: 400px) {
+
+  .user-display-name{
+    display: none;
+  }
+  .sidebar-logo,.sidebar-content{
+    text-align: center;
+    padding-left: 10%;
+  }
+  .sidebar-nav{
+      display:none;
+  }
+  .registration-section {
+max-width: 80%;
+  }
+
+
+
+}
+
 @media only screen and (min-width: 600px){
   .sidebar-menu{
-    max-width: 2%;
+    max-width: 14%;
   }
   .user-display-name{
     display: none;
@@ -112,12 +132,12 @@ max-width: 60%;
     display:block;
 }
   .registration-section {
-    max-width: 70%;
+    max-width: 50%;
   }
   
   .sidebar-menu{
     /* max-width:20%; */
-    padding-left: 15%;
+    padding-left: 30%;
   }
 .sidebar-nav{
   max-width: 20%;
@@ -160,13 +180,13 @@ max-width: 60%;
   }
   .sidebar-nav{
     display:block;
-    max-width: 10%;
+    max-width: 16%;
 }
   .registration-section {
-    max-width: 90%;
+    max-width: 70%;
   }
   .sidebar-menu{
-    max-width:15%;
+    max-width:20%;
   }
 
 }
