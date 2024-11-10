@@ -11,7 +11,7 @@
       display:none;
   }
   .registration-section {
-max-width: 70%;
+max-width: 85%;
   }
   .user-display-name{
     padding-right: 10%;
@@ -45,16 +45,18 @@ max-width: 70%;
   }
   .sidebar-nav{
     display:block;
-    max-width: 10%;
+    max-width: 25%;
 }
 .sidebar-content {
   padding: 0px;
 
 }
 
-
+.sidebar-menu{
+  padding-left: 15%;
+}
 .registration-section {
-max-width: 50%;
+max-width: 60%;
 }
 .user-display-name{
   padding-right: 10%;
@@ -110,13 +112,15 @@ max-width: 50%;
     display:block;
 }
   .registration-section {
-    max-width: 45%;
+    max-width: 70%;
   }
+  
   .sidebar-menu{
-    max-width:20%;
+    /* max-width:20%; */
+    padding-left: 15%;
   }
 .sidebar-nav{
-  max-width: 10%;
+  max-width: 15%;
 }
 }
 @media only screen and (min-width: 992px){
@@ -137,10 +141,10 @@ max-width: 50%;
     max-width: 50%;
   }
   .sidebar-menu{
-    max-width:10%;
+    max-width:20%;
   }
 .sidebar-nav{
-  max-width: 10%;
+  max-width: 25%;
 }
 .user-display-name{
   display: block;
@@ -156,16 +160,15 @@ max-width: 50%;
   }
   .sidebar-nav{
     display:block;
+    max-width: 15%;
 }
   .registration-section {
-    max-width: 50%;
+    max-width: 100%;
   }
   .sidebar-menu{
     max-width:20%;
   }
-.sidebar-nav{
-  max-width: 25%;
-}
+
 }
 
 
@@ -362,11 +365,11 @@ body {
   width: 147px;
 }
 
-.main-section {
+/* .main-section {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-}
+} */
 .main-content {
   display: flex;
   gap: 2px;
@@ -379,7 +382,7 @@ body {
   object-fit: contain;
   object-position: center;
   width: 230px;
-  max-width: 25%;
+  /* max-width: 20%; */
 }
 
 
@@ -1108,7 +1111,7 @@ padding-right: 20px;
 .main-section {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .navigation-sidebar {
