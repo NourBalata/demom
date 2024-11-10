@@ -5,7 +5,7 @@
   }
   .sidebar-logo,.sidebar-content{
     text-align: center;
-    padding-left: 35%;
+    padding-left: 27%;
   }
   .sidebar-nav{
       display:none;
@@ -41,7 +41,7 @@ max-width: 70%;
   }
   .sidebar-logo,.sidebar-content{
     text-align: center;
-    padding-left:45%;
+    padding-left:40%;
   }
   .sidebar-nav{
     display:block;
