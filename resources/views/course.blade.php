@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <script src="script.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -8,133 +9,137 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" </head>
 </head>
 
-<body>
-    <section >
-    
 
-            @include('layouts.header')
+    <div class="root">
+        <div class="sideBar" >
+
+            <div class="side">
 
 
+                @include('layouts.nav')
 
-      
-     <div class="main-section">
-            <img src="{{ asset('image/photoes.png') }}" alt="Navigation" class="sidebar-nav" />
-     
-            <div class="registration-section">
-                <header class="registration-header">
-                    <h1 class="registration-title">التسجيل في المسار</h1>
-                    <div class="close-icon-wrapper">
-                        <img src="{{ asset('image/arrow.svg') }}" alt="Close Icon" class="close-icon" />
-                    </div>
-                </header>
-                <div class="">
-                    <div class="progress-steps">
-                        <div class="step">
-                            <span class="step-text">اختيار المدرس</span>
-                            <span class="step-number">2</span>
-                        </div>
-                        <div class="progress-line"></div>
-                        <div class="step">
-                            <span class="step-text">بيانات الخطة</span>
-                            <span class="step-number">1</span>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="selection-header">
-                            <div class="error-icon">
-                                <img src="{{ asset('image/love.svg') }}" alt="Error" class="icon" />
-                            </div>
-                            <div class="info-icon">
-                                <img src="{{ asset('image/search.svg') }}" alt="Info" class="icon" />
-                            </div>
-                        </div>
-                        <div class="teacher-cards">
-                            <article class="teacher-card">
-                                <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
-                                    class="teacher-image" />
-                                <div class="teacher-info">
-                                    <h2 class="teacher-name">محمد أحمد</h2>
-                                    <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر او
-                                        سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
-                                </div>
-                                <hr class="divider" />
-                                <div class="teacher-details">
-                                    <p class="teacher-specialty">الاختصاص : الاسم هنا</p>
-                                    <p class="teacher-readings">القراءات : اسم 1 - اسم 2 - اسم 3</p>
-                                    <div class="rating">
-                                        <img src="{{ asset('image/star.svg') }}"alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star2.svg') }}" alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}"" alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
-                                    </div>
-                                </div>
-                                <img src="{{ asset('image/love.svg') }}" alt="Favorite" class="favorite-icon" />
-                            </article>
-                            <article class="teacher-card">
-                                <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
-                                    class="teacher-image" />
-                                <div class="teacher-info">
-                                    <h2 class="teacher-name">محمد أحمد</h2>
-                                    <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر او
-                                        سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
-                                </div>
-                                <hr class="divider" />
-                                <div class="teacher-details">
-                                    <p class="teacher-specialty">الاختصاص : الاسم هنا</p>
-                                    <p class="teacher-readings">القراءات : اسم 1 - اسم 2 - اسم 3</p>
-                                    <div class="rating">
-                                        <img src="{{ asset('image/star.svg') }}"alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star2.svg') }}" alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}"" alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
-                                    </div>
-                                </div>
-                                <img src="{{ asset('image/love.svg') }}" alt="Favorite" class="favorite-icon" />
-                            </article>
-                            <article class="teacher-card">
-                                <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
-                                    class="teacher-image" />
-                                <div class="teacher-info">
-                                    <h2 class="teacher-name">محمد أحمد</h2>
-                                    <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر
-                                        او سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
-                                </div>
-                                <hr class="divider" />
-                                <div class="teacher-details">
-                                    <p class="teacher-specialty">الاختصاص : الاسم هنا</p>
-                                    <p class="teacher-readings">القراءات : اسم 1 - اسم 2 - اسم 3</p>
-                                    <div class="rating">
-                                        <img src="{{ asset('image/star.svg') }}"alt="Star" class="star-icon" />
-                                        <img src="{{ asset('image/star2.svg') }}" alt="Star"
-                                            class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}"" alt="Star"
-                                            class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}" alt="Star"
-                                            class="star-icon" />
-                                        <img src="{{ asset('image/star3.svg') }}" alt="Star"
-                                            class="star-icon" />
-                                    </div>
-                                </div>
-                                <img src="{{ asset('image/love.svg') }}" alt="Favorite" class="favorite-icon" />
-                            </article>
-                        </div>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="button">حفظ الخطة</button>
-                        <button class="button">السابق</button>
-                    </div>
-                </div>
-
-            </div> 
-            @include('layouts.nav')
-
+            </div>
+        </div>
+       
+        <nav class="profile">
         
+            @include('layouts.header')   
+        
+        </nav>
+        <div class="nave">
+            <img src="image/photoes.png" class="nave" alt="Navigation"  />  
+        </div>
+        <body>
+        <div class="main">
 
+            <div class="teacher-cards">
+                <article class="teacher-card">
+                    <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
+                        class="teacher-image" />
+                    <div class="teacher-info">
+                        <h2 class="teacher-name">محمد أحمد</h2>
+                        <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر او
+                            سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
+                    </div>
+                    <hr class="divider" />
+                    {{-- <div class="teacher-details">
+                        <p class="teacher-specialty" style="direction: rtl">الاختصاص : الاسم هنا</p>
+                        <p class="teacher-readings">القراءات : اسم 1 - اسم 2 - اسم 3</p>
+                        <div class="rating">
+                            <img src="{{ asset('image/star.svg') }}"alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star2.svg') }}" alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}"" alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
+                        </div>
+                    </div> --}}
+                    {{-- <img src="{{ asset('image/love.svg') }}" alt="Favorite" class="favorite-icon" /> --}}
+                </article>
+                <article class="teacher-card">
+                    <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
+                        class="teacher-image" />
+                    <div class="teacher-info">
+                        <h2 class="teacher-name">محمد أحمد</h2>
+                        <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر او
+                            سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
+                    </div>
+                    <hr class="divider" />
+                </article>
+                <article class="teacher-card">
+                    <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
+                        class="teacher-image" />
+                    <div class="teacher-info">
+                        <h2 class="teacher-name">محمد أحمد</h2>
+                        <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر او
+                            سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
+                    </div>
+                    <hr class="divider" />
+                </article>
+                {{-- <article class="teacher-card">
+                    <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
+                        class="teacher-image" />
+                    <div class="teacher-info">
+                        <h2 class="teacher-name">محمد أحمد</h2>
+                        <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر او
+                            سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
+                    </div>
+                    <hr class="divider" />
+                    <div class="teacher-details">
+                        <p class="teacher-specialty">الاختصاص : الاسم هنا</p>
+                        <p class="teacher-readings">القراءات : اسم 1 - اسم 2 - اسم 3</p>
+                        <div class="rating">
+                            <img src="{{ asset('image/star.svg') }}"alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star2.svg') }}" alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}"" alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}" alt="Star" class="star-icon" />
+                        </div>
+                    </div>
+                    <img src="{{ asset('image/love.svg') }}" alt="Favorite" class="favorite-icon" />
+                </article>
+                <article class="teacher-card">
+                    <img src="{{ asset('image/qara.png') }}" alt="Teacher محمد أحمد"
+                        class="teacher-image" />
+                    <div class="teacher-info">
+                        <h2 class="teacher-name">محمد أحمد</h2>
+                        <p class="teacher-description">يمكن اضافة لمحة عن المدرس هنا حيث يمكن ان تكون سطر
+                            او سطرين بحيث لا تتجاوز اكثر حسب المسافرة المتوفرة لدينا</p>
+                    </div>
+                    <hr class="divider" />
+                    <div class="teacher-details">
+                        <p class="teacher-specialty">الاختصاص : الاسم هنا</p>
+                        <p class="teacher-readings">القراءات : اسم 1 - اسم 2 - اسم 3</p>
+                        <div class="rating">
+                            <img src="{{ asset('image/star.svg') }}"alt="Star" class="star-icon" />
+                            <img src="{{ asset('image/star2.svg') }}" alt="Star"
+                                class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}"" alt="Star"
+                                class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}" alt="Star"
+                                class="star-icon" />
+                            <img src="{{ asset('image/star3.svg') }}" alt="Star"
+                                class="star-icon" />
+                        </div>
+                    </div>
+                    <img src="{{ asset('image/love.svg') }}" alt="Favorite" class="favorite-icon" />
+                </article>
+            </div>
+
+
+        </div>  --}}
+
+              
+        </div>
+    </div>
+          
+           
+        </article></div>
+    </div>
+</div>
 
         </div>
-    </section>
+
+
 
     {{-- <button onclick="zoomIn()">Zoom In</button>
     <button onclick="zoomOut()">Zoom Out</button> --}}
@@ -160,4 +165,34 @@
         document.body.style.transform = `scale(${zoomLevel})`;  // Apply scale transform
       }
     }
+    // Get all the menu items
+const menuItems = document.querySelectorAll('.menu-item');
+
+// Add a click event listener to each menu item
+menuItems.forEach(item => {
+    item.addEventListener('click', function () {
+        // Remove the active class from all items
+        menuItems.forEach(item => item.classList.remove('active'));
+
+        // Add the active class to the clicked item
+        this.classList.add('active');
+    });
+});
+
+  </script>
+
+<script>
+// Function to toggle the menu visibility on small screens
+// const menuToggle = document.getElementById('check');
+// const menu = document.getElementById('menu');
+
+// menuToggle.addEventListener('change', function () {
+//     if (menuToggle.checked) {
+//         menu.classList.add('active');
+//     } else {
+//         menu.classList.remove('active');
+//     }
+// });
+
+
   </script>
