@@ -1,4 +1,50 @@
 
+.sideBar{
+  
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+.sideBar::-webkit-scrollbar {
+  width:2px;
+  }
+  
+  /* Track */
+  .sideBar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  }
+  
+  /* Handle */
+  .sideBar::-webkit-scrollbar-thumb {
+  background: #1b676f;
+  border-radius: 10px;
+  }
+
+  /* .main{
+      
+  overflow-x:hidden;
+  overflow-y:scroll;
+  } */
+  /* .main::-webkit-scrollbar {
+    width: 10px;
+    height: 450px;
+    } */
+    
+    /* Track */
+    /* .main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    } */
+    
+    /* Handle */
+    /* .main::-webkit-scrollbar-thumb {
+    background: #1b676f;
+    border-radius: 10px;
+    }
+   */
+
+
+
 .registration-section {
   align-self: flex-start;
   display: flex;
@@ -17,31 +63,57 @@
 .sp{
   font-size: 50%;
 }
+/* .parent{
+  
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+.parent::-webkit-scrollbar {
+  width: 10px;
+  } */
+  
+  /* Track */
+  /* .parent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  } */
+  
+  /* Handle */
+  .parent::-webkit-scrollbar-thumb {
+  background: #1b676f;
+  border-radius: 10px;
+  }
+
+  /* .main{
+      
+  overflow-x:hidden;
+  overflow-y:scroll;
+  }
+  .main::-webkit-scrollbar {
+    width: 10px;
+    } */
+    
+    /* Track */
+    /* .main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    } */
+    
+    /* Handle */
+    /* .main::-webkit-scrollbar-thumb {
+    background: #1b676f;
+    border-radius: 10px;
+    } */
 /* .menu-items{
   max-width: 70%;
 } */
 }
-/* @media (width:540px) {
-
-.user-name-rating{
-  display: none;
-  
-}
-.user-balance{
-  display: none;
-}
-
-  .sp{
-    font-size: 100%;
-  }
-
-} */
 
 
 @media only screen and (min-width: 1024px){
-.sideBar{
+/* .sideBar{
   width: 30%;
-}
+} */
 .user-infoo{
   display: flex;
   padding-right: 20%;
@@ -60,12 +132,15 @@
 @media only screen and (min-width: 1200px){
   .main{
     /* width: 60%; */
-    right: 23%;
+    right: 18%;
+    gap:2%;
   }
   .menu-items{
-    width:60%
+    width:104%;
   }
-
+.sideb{
+  padding-right:9%
+}
 }
 @media only screen and (min-width: 1200px){
  .user-infoo{
@@ -73,11 +148,11 @@
   padding-right: 25%;
  }
  .sideBar{
-  width:35%;
-  top:20%
+  /* width:35%; */
+  top:30%
  }
 .sideb{
-  padding-right: 7%;
+  /* padding-right: 7%; */
 }
 }
 .user-info{
@@ -115,7 +190,7 @@ padding-right: 10%
 } */
 @media (max-width:  900px) {
 .menu-items{
-  width: 80%;
+  /* width: 80%; */
 }
 }
 @media (max-width:  952px) {
@@ -137,7 +212,7 @@ padding-right: 10%
 
 @media (max-width:400px) {
 .main{
-  width: 100%;
+  /* width: 100%; */
   /* padding-right */
   padding-left: 3%;
 }
@@ -147,7 +222,43 @@ padding-right: 10%
   .user-infoo{
     display: flex;
     padding-right: 10%;
+    
   }
+  .menu-items{
+    width: 50%;
+  }
+  .nameee{
+    display: none;
+  }
+  .user-info{
+    width: 10%;
+  }
+  .sideBar{
+  
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  .parent{
+    
+    overflow-x:hidden;
+    overflow-y:scroll;
+  }
+  .parent::-webkit-scrollbar {
+    width: 10px;
+    } 
+    
+    /* Track */
+    .parent::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    } 
+    
+    /* Handle */
+    .parent::-webkit-scrollbar-thumb {
+      background: #1b676f;
+      border-radius: 10px;
+      }
+
   /* .main{
     width:82%;
     padding-right: 25%;
@@ -155,11 +266,12 @@ padding-right: 10%
   .menu-items{
     width: 80%;
   }
-  .sideBar{
+  /* .sideBar{
     width: 33%;
-  }
+  } */
   .user-infoo{
     display: flex;
+  
     /* padding-right: 15%; */
   }
   .sideb{
@@ -175,9 +287,9 @@ padding-right: 10%
   .user-avatar{
     display: block;
   }
-  .sideBar{
-    width: 70%;
-  }
+  /* .sideBar{
+    width: 90%;
+  } */
   nav ul li a{
     font-size: 16px;
   }
@@ -196,7 +308,7 @@ padding-right: 10%
   }
  
  }
- @media (min-width: 900px) {
+ @media (max-width: 900px) {
   .user-infoo{
     display: flex;
   }
@@ -204,15 +316,32 @@ padding-right: 10%
     top: 22%;
   }
   .main{
-    width: 80%;
-    padding-right: 20%;
+    /* width: 80%;
+    padding-right: 20%; */
   }
-  .sideBar{
+  /* .sideBar{
     width: 30%;
-  }
+  } */
   .menu-items{
-    width: 40%;
+    /* width: 110%; */
   }
+  
+  .sideBar{
+    width:20%
+  }
+ }
+ @media (width:940px) {
+
+.sideBar{
+  top:20%
+}
+.main{
+  width: 55%;
+  right:25%
+}
+.menu-items{
+  gap:1%
+}
  }
  @media (min-width: 1000px) 
  {
@@ -220,23 +349,23 @@ padding-right: 10%
   width:60%;
   padding-right: 1%;
 }
-.sideBar{
+/* .sideBar{
 width:32%
-}
+} */
 .user-infoo{
   display: flex;
 }
 .menu-items{
-  width: 60%;
+  /* width: 60%; */
 }
  }
  .menu-items{
   background-color:white;
  }
  @media (min-width: 770px) {
-  .sideBar{
+  /* .sideBar{
     width: 40%;
-  }
+  } */
   .main{
     /* width:80% */
   }
@@ -300,6 +429,26 @@ display: none;
     .sp{
       font-size: 100%;
     }
+    .sideBar{
+  
+      overflow-x:hidden;
+      overflow-y:scroll;
+    }
+    .sideBar::-webkit-scrollbar {
+      width:2px;
+      }
+      
+      /* Track */
+      .sideBar::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+      }
+      
+      /* Handle */
+      .sideBar::-webkit-scrollbar-thumb {
+      background: #1b676f;
+      border-radius: 10px;
+      }
     
   }
  
@@ -417,12 +566,13 @@ flex-direction: column;
 color: #1b676f;
 text-align: right;
 padding: 24px 18px 235px;
+
 font: 30px Araboto-Normal;
 font-size: 30px;
   /* display:flex; */
   /* padding-top:2rem; */
   padding-left:1.25rem;
-  padding-right: 1.25rem;
+  padding-right: .5rem;
   /* --tw-bg-opacity:1; */
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   /* overflow-y:scroll; */
@@ -482,47 +632,7 @@ body::-webkit-scrollbar-thumb {
   background: #1b676f;
   border-radius: 10px;
 }
-@media only screen and (max-width: 600px) {
-  /* .balance-text,.user-icon{
-  display:none;
-}
-.user-display-name{
-  display: none;
-}
-.sidebar-logo,.sidebar-content{
-  text-align: center;
-  padding-left: 20%;
-} */
-/* .sidebar-logo,.sidebar-content{
-  text-align: center;
-  padding-left: 30%;
-}
-.sidebar-nav{
-    display:none;
-}
-.registration-section {
-max-width: 82%;
-}
-.user-display-name{
-  padding-right: 10%;
-}
-.registration-title{ */
-  /* max-width: 80%; */
-  /* text-align: right;
-  padding-left: 50px;
-  
-}
-.registration-header{
-  text-align: right;
-  padding-left: 50px;
-}
-.close-icon{
-  text-align: right;
-  padding-left: 100px;
 
-
-} */
-}
 @media only screen and (max-width: 400px) {
 
 /* .user-display-name{
@@ -563,98 +673,7 @@ max-width: 73%;
   
   } */
  }
-@media (max-width: 858px) 
- {
-  /* .checkbtn
-  {
-    display: block;
-    
-  
-  }
-.sidebar-menu{
-  height: 50%;
-}
-  ul{
-    /* scrollbar-width: 10%; */
-    /* position: fixed;
-    width: 50%;
- 
-    height: 100vh;
-    background-color: #00000000;
-    top: 80px;
-    right:-120%;
-    text-align: right;
-    transition: all .5s;
-  
-  }
 
-  #check:checked ~ ul {
-    right: 0;
-  } */ */
-
- /* }  */
-
-
-/* } 
-
-@media only screen and (min-width: 600px){
-/* .sidebar-menu{
-  max-width: 14%;
-}
-.user-display-name{
-  display: none;
-}
-.sidebar-logo,.sidebar-content{
-  text-align: center;
-  padding-left:30%;
-}
-.sidebar-nav{
-  display:block;
-  max-width: 25%;
-}
-.sidebar-content {
-padding: 0px;
-
-} */
-
-/* .sidebar-menu{
-padding-left: 15%;
-}
-.registration-section {
-max-width: 60%;
-}
-.user-display-name{
-padding-right: 10%;
-}
-.registration-title{ */
-/* max-width: 80%; */
-/* text-align: right;
-padding-left: 25px;
-
-} */
-/* .sidebar-nav{
-max-width: 20%;
-} */
-/* .registration-header{
-text-align: right;
-padding-left: 25px;
-}
-.close-icon{
-text-align: right;
-padding-left: 50px;
-
-} */
-
-}
-/* @media only screen and (width: 802px) {
-.user-display-name{
-  display: none;
-}
-.sidebar-logo,.sidebar-content{
-  text-align: center;
-  padding-left: 80%;
-}
-} */
 
 @media only screen and (min-width: 768px) {
 /* .user-display-name{
@@ -689,30 +708,12 @@ max-width: 20%;
 } */ 
 }
 @media only screen and (min-width: 992px){
-/* .checkbtn{
-  display:none;
+/* .user-infoo{
+  display: flex;
 }
-#check
-{  
-
-    display:none;
-} */
-/* .sidebar-nav{
-  display:block;
-
-}
-
-.registration-section {
-  max-width: 45%;
-}
-.sidebar-menu{
-  max-width:30%;
-}
-.sidebar-nav{
-max-width: 20%;
-}
-.user-display-name{
-display: block;
+.sideBar{
+  width: 20%;
+  top: 15%;
 } */
 }
 @media only screen and (min-width: 1200px){
@@ -733,52 +734,21 @@ display: block;
 .sidebar-menu{
   max-width:15%;
 }  */
-
+.user-infoo{
+  display: flex;
+}
+.menu-items{
+  width: ;
+}
 }
 
-@media only screen and (max-width: 600px) {
-    /* .balance-text,.user-icon{
-    display:none;
-  }
-  .user-display-name{
-    display: none;
-  } */
-  /* .sidebar-logo,.sidebar-content{
-    text-align: center;
-    padding-left: 20%;
-  }
-  .sidebar-logo,.sidebar-content{
-    text-align: center;
-    padding-left: 30%;
-  }
-  .sidebar-nav{
-      display:none;
-  } */
-  /* .registration-section {
-max-width: 82%;
-  }
-  .user-display-name{
-    padding-right: 10%;
-  }
-  .registration-title{ */
-    /* max-width: 80%; */
-    /* text-align: right;
-    padding-left: 50px;
-    
-  }
-  .registration-header{
-    text-align: right;
-    padding-left: 50px;
-  }
-  .close-icon{
-    text-align: right;
-    padding-left: 100px;
 
-
-  } */
-}
 .sideb{
   display: flex;
+}
+.sidebb{
+padding-right: 2%;
+display: flex;
 }
 @media only screen and (width: 360px) {
   .user-infoo{
@@ -789,35 +759,205 @@ max-width: 82%;
   }
 }
 @media only screen and (width: 400px) {
-
+.menu-items{
+  height: 500px;
+}
+.main{
+  height: 700px;
+}
+.user-info{
+  width: 20%;
+}
 .main{
   width: 100%;
   padding-right: 0%;
   padding-left: 2%;
 }
 .menu-items{
-  width: 50%;
+  width: 70%;
 }
+.sideBar{
+  
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+ .parent{
+  
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+.parent::-webkit-scrollbar {
+  width: 10px;
+  } 
+  
+  /* Track */
+  .parent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  } 
+  
+  /* Handle */
+  .parent::-webkit-scrollbar-thumb {
+    background: #1b676f;
+    border-radius: 10px;
+    }
+/* .sideBar::-webkit-scrollbar {
+  width:2px;
+  } */
+  
+  /* Track */
+  /* .sideBar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  } */
+  
+  /* Handle */
+  /* .sideBar::-webkit-scrollbar-thumb {
+  background: #1b676f;
+  border-radius: 10px;
+  } */
+}
+@media only screen and (max-width: 600px) {
+  .balance-text,.user-icon{
+    display:block;
+  }
+  .nameee{
+    display: none;
+  }
+.menu-items{
+  width: 50%;
+  height:80%;
+}
+  .user-info{
+    width: 20%;
+  }
+  .user-display-name{
+    display: block;
+  }
+  .sideBar{
+  
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+   .parent{
+    
+    overflow-x:hidden;
+    overflow-y:scroll;
+  }
+  .parent::-webkit-scrollbar {
+    width: 10px;
+    } 
+    
+    /* Track */
+    .parent::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    } 
+    
+    /* Handle */
+    .parent::-webkit-scrollbar-thumb {
+      background: #1b676f;
+      border-radius: 10px;
+      }
 
+
+}
+@media only screen and (min-width: 600px){
+
+
+}
+@media only screen and (min-width: 768px) {
+.user-info{
+  width: 15%;
+}
+.user-infoo{
+  display: flex;
+}
+.main{
+  width:56%;
+  right: 27%;
+}
+.nave{
+  top:20%;
+}
+.sideBar{
+  width: 28%;
+  top:22%
+}
+.sideb{
+  /* padding-right:2%; */
+}
 }
 @media only screen and (max-width: 400px) {
 
 .main{
-  width: 90%;
+  width: 100%;
   padding-right: 0;
   padding-left: 2%;
 }
-
+.sideBar{
+  
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+.parent{
+  
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+.parent::-webkit-scrollbar {
+  width: 10px;
+  } 
+  
+  /* Track */
+  .parent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  } 
+  
+  /* Handle */
+  .parent::-webkit-scrollbar-thumb {
+    background: #1b676f;
+    border-radius: 10px;
+    }
 }
 @media only screen and (width: 400px) {
   .user-infoo{
     display: none;
+  }
+  .menu-items{
+    width: 60%;
   }
 }
 @media only screen and (max-width: 500px) {
   .user-infoo{
     display: none;
   }
+  .sideBar{
+  
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  .parent{
+  
+    overflow-x:hidden;
+    overflow-y:scroll;
+  }
+  .parent::-webkit-scrollbar {
+    width: 10px;
+    } 
+    
+    /* Track */
+    .parent::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    } 
+    
+    /* Handle */
+    .parent::-webkit-scrollbar-thumb {
+      background: #1b676f;
+      border-radius: 10px;
+      }
 }
 /* When checkbox is checked, slide in the menu */
 
@@ -2728,7 +2868,7 @@ width: 100%;
   font-size: 20px;
   font-family: Araboto-Medium, sans-serif;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 2px;
   text-align: center;
   background-color:white;
 }
@@ -2758,11 +2898,13 @@ width: 20%;padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 2rem; gap
 
 
 .main{
+  /* background-color: #fff; */
   /* width: 70%; */
 top: 10rem;
-
-min-height: 100vh;
-height:100%;
+/* overflow-y: scroll; */
+/* min-height: 100vh; */
+height: 450px;
+/* scrollbar-width: normal; */
 position: fixed;
 /* right: 24%; */
 
@@ -2789,7 +2931,7 @@ max-width:100%;height:auto
    .user-display-name{
     padding: 10px;
 align-self: center;
-
+width:300px;
 gap:2%;
 color: #5f9ea0;
 text-align: right;
