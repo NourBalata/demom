@@ -80,47 +80,6 @@
 </div>
 
 
-
-{{-- <button onclick="zoomIn()">Zoom In</button>
-    <button onclick="zoomOut()">Zoom Out</button> --}}
 </body>
 
 </html>
-
-
-<script>
-    let zoomLevel = 1; // Initial zoom level (100%)
-
-    // Function to zoom in
-    function zoomIn() {
-        if (zoomLevel < 3) { // Limit the zoom-in level (maximum zoom 300%)
-            zoomLevel += 0.1; // Increase zoom by 10%
-            document.body.style.transform = `scale(${zoomLevel})`; // Apply scale transform
-        }
-    }
-
-    // Function to zoom out
-    function zoomOut() {
-        if (zoomLevel > 0.5) { // Limit the zoom-out level (minimum zoom 50%)
-            zoomLevel -= 0.1; // Decrease zoom by 10%
-            document.body.style.transform = `scale(${zoomLevel})`; // Apply scale transform
-        }
-    }
-    // Get all the menu items
-    const menuItems = document.querySelectorAll('.menu-item');
-
-    // Add a click event listener to each menu item
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
-            // Remove the active class from all items
-            menuItems.forEach(item => item.classList.remove('active'));
-
-            // Add the active class to the clicked item
-            this.classList.add('active');
-        });
-    });
-</script>
-
-<script>
-
-</script>
